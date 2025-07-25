@@ -23,7 +23,7 @@ git clone "https://github.com/kriscelmer/dib-nginx"
 
 ## Files to get copied into the image
 
-Place all file to get copied verbatim into the image built in subfolders of `root`, like the `root/var/www/html/index.html` here.
+Place all files to get copied verbatim into the image in subfolders of `root`, like the `root/var/www/html/index.html` here.
 
 ## Build the image
 
