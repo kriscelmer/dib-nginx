@@ -23,7 +23,7 @@ git clone "https://github.com/kriscelmer/dib-nginx"
 
 ## Files to get copied into the image
 
-Place all files to get copied verbatim into the image in subfolders of `root`, like the `root/var/www/html/index.html` here.
+Place all static files to get copied verbatim into the image in subfolders of `dib-nginx/nginx/static/`, like the `dib-nginx/nginx/static/var/www/html/index.html` to get copied into `/var/www/html/index.html`.
 
 ## Build the image
 
@@ -34,5 +34,5 @@ export ELEMENTS_PATH=~/dib-nginx/elements
 export DIB_RELEASE=noble # Ubuntu 24.04 LTS
 
 # Build; “vm” adds a bootloader, “ubuntu” pulls the cloud image, "nginx" refers to subfolder in ELEMENTS_PATH
-disk-image-create ubuntu vm nginx -o ubuntu-24.04-nginx
-
+disk-image-create ubuntu vm nginx install-static -o ubuntu-24.04-nginx
+```
