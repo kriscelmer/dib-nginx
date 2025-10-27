@@ -1,0 +1,7 @@
+#!/bin/bash
+set -eu
+
+# Helper provided by DIB to call apt/yum appropriately
+install-packages nginx
+
+# Install other packages and tools here

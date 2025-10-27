@@ -1,0 +1,4 @@
+#!/bin/bash
+set -eu
+
+# Add any post-installation setup or cleanup tasks here
